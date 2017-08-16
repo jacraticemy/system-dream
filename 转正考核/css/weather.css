@@ -1,0 +1,761 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: auto;
+}
+
+/*#weather-all {
+	position: absolute;
+}*/
+
+#weather-head-nums {
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+}
+
+.weather-searchtools-conter {
+	font-size: 12px;
+	color: #666;
+	/*margin: 0 0 0 121px;*/
+	height: 42px;
+	width: 538px;
+	line-height: 42px;
+}
+
+.weather-head-nums-inner {
+	position: relative;
+	top: -42px;
+}
+
+.weather-searchtools-conter-close {
+	float: right;
+	cursor: pointer;
+	color: #666;
+}
+
+.weather-searchtools-conter-time {
+	cursor: pointer;
+	color: #666;
+}
+
+.weather-searchtools-conter-time:hover .weather-searchtools-time-con {
+	display: block;
+}
+
+.weather-searchtools-time-con {
+	width: 117px;
+	height: 226px;
+	position: absolute;
+	z-index: 2000;
+	top: 30px;
+	left: -20px;
+	display: none;
+	background: #FFFFFF;
+	font-size: 12px;
+	border: 1px solid rgba(0,0,0,.2);
+	box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.weather-searchtools-conter-file {
+	cursor: pointer;
+	color: #666;
+	margin-left: 23px;
+}
+
+.weather-searchtools-conter-serach {
+	cursor: pointer;
+	color: #666;
+	margin-left: 23px;
+}
+
+.weather-triangledown-icon {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	vertical-align: text-bottom;
+	overflow: hidden;
+	background: url(../img/icons_5859e57.png) no-repeat 0 0;
+	background-position: -408px -144px;
+}
+
+.weather-top-icon {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	vertical-align: text-bottom;
+	overflow: hidden;
+	background: url(../img/icons_5859e57.png) no-repeat 0 0;
+	background-position: -912px -144px;
+}
+
+.weather-nums {
+	width: 538px;
+	/*margin: 0 0 0 121px;*/
+	height: 42px;
+	line-height: 42px;
+	font-size: 12px;
+	color: #999;
+}
+
+.weather-nums-searchtools {
+	float: right;
+	cursor: pointer;
+	color: #666;
+}
+
+.weather-nums-searchtools:hover {
+	color: #000000;
+}
+
+.weather-searchtools-spanner {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	vertical-align: text-bottom;
+	overflow: hidden;
+	background: url(../img/icons_5859e57.png) no-repeat 0 0;
+	background-position: -864px -144px;
+}
+
+.weather-head-gap {
+	font-size: medium;
+	margin-bottom: 5px;
+	font-weight: 400;
+	height: 24px;
+	line-height: 1.54;
+}
+
+.weather-head-gap-title {
+	display: block;
+	color: #261CDC;
+	text-decoration: underline;
+    cursor: auto;
+    font-family: arial;   
+}
+
+.weather-head-gap em {
+	color: red;
+	font-style: normal;
+	text-decoration: underline;
+}
+
+/*.weather-head-gap-invite {
+	display: inline;
+	font-size: 13px;
+    color: #999;
+    font-weight: 400;
+    letter-spacing: -4px;
+}*/
+
+.weather {
+	/*margin: 0 auto;*/
+	width: 538px;
+	height: 405px;
+	position: relative;
+	font-family: "微软雅黑";
+	background-image: -webkit-linear-gradient(top, rgb(72, 86, 99), rgb(161, 184, 202));
+}
+
+#weather-background-overcast {
+	width: 538px;
+	height: 405px;
+	position: absolute;
+	opacity: 0;
+	z-index: 0;
+}
+/*#weather-background-rain {
+	width: 538px;
+	height: 405px;
+	position: absolute;
+	opacity: 1;
+	z-index: 0;
+}*/
+
+.weather-background-cloudy,
+.weather-background-sun {
+	width: 538px;
+	height: 405px;
+	position: absolute;
+	background-image: -webkit-linear-gradient(top, rgb(13, 104, 188), rgb(114, 173, 224));
+	opacity: 0;
+	overflow: hidden;
+}
+
+.weather-sun-png {
+	float: left;
+	margin-left: 180px;
+}
+
+.weather-ring-png-1 {
+	position: absolute;
+	left: -470px;
+	transform: rotate(300deg);
+}
+
+.weather-ring-png-2 {
+	position: absolute;
+	left: -470px;
+	top: 300px;
+	transform: rotate(300deg);
+}
+
+.weather-ring-png-3 {
+	position: absolute;
+	left: -470px;
+	top: 200px;
+	transform: rotate(300deg);
+}
+
+
+/*///////////////雨点下落/////////////*/
+
+
+/*#weather-erain {
+	width: 538px;
+	height: 405px;
+	position: absolute;
+	overflow: hidden;
+	background-image: -webkit-linear-gradient(top, rgb(72, 86, 99), rgb(161, 184, 202));
+}*/
+
+.yu {
+	position: absolute;
+	color: #fff;
+}
+
+
+/*////////////阴天///////////////*/
+
+#weather-background-cloudy {
+	width: 538px;
+	height: 405px;
+	position: absolute;
+	background-image: -webkit-linear-gradient(top, rgb(72, 86, 99), rgb(161, 184, 202));
+}
+
+.weather p {
+	text-align: center;
+	font-size: 12px;
+	text-shadow: 1px 1px 1px #555;
+	line-height: 1em;
+}
+
+.weather-today {
+	width: 186px;
+	height: 250px;
+	position: absolute;
+	color: #FFFFFF;
+	/* : 5;*/
+}
+
+.weather-today-date {
+	width: 300px;
+	text-align: left!important;
+	margin: 12px 0 0 12px;
+}
+
+.weather-today-quality {
+	margin-top: 8px;
+}
+
+.weather-today-date em {
+	display: inline-block;
+	margin-left: 5px;
+	width: 82px;
+	line-height: 18px;
+	height: 18px;
+	text-align: center;
+	font-size: 12px;
+	font-style: normal;
+	color: #fff;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.weather-today-realtime {
+	text-align: center;
+}
+
+.weather-today-realtime-pic {
+	width: 50px;
+	height: 50px;
+	margin: 8px 0 0 60px;
+	background: url(../img/8.png);
+	background-size: 100% 100%;
+}
+
+.weather-today-realtime-title {
+	font-size: 48px;
+	line-height: 64px;
+	display: inline-block;
+	font-family: Arial;
+	text-shadow: 1px 1px 1px #555;
+}
+
+.weather-today-realtime-data {
+	position: relative;
+	display: inline-block;
+}
+
+.realtme-data-sup,
+.realtme-data-sub {
+	display: block;
+	text-align: left;
+	font-style: normal;
+	font-size: 14px;
+	text-shadow: 1px 1px 1px #555;
+}
+
+.weather-today-temp {
+	margin-top: 8px;
+}
+
+.weather-today-weath {
+	margin-top: 12px
+}
+
+.weather-today-wind {
+	margin-top: 11px;
+}
+
+.weather-tuesday,
+.weather-wednesday,
+.weather-thusday,
+.weather-friday {
+	width: 89px;
+	height: 250px;
+	position: absolute;
+	color: #FFFFFF;
+}
+
+.weather-tuesday {
+	/*background: red;*/
+	left: 186px;
+}
+
+.weather-everyday-date {
+	width: 89px;
+	margin-top: 56px;
+}
+
+.weather-everyday-datetoday {
+	margin-top: 8px;
+	opacity: 0.5;
+	text-shadow: none;
+}
+
+.weather-every-pic {
+	width: 50px;
+	height: 50px;
+	background: url(../img/3.png);
+	background-size: 100% 100%;
+	margin: 20px 0px 0 20px;
+}
+
+.weather-everyday-temp {
+	margin-top: 22px;
+}
+
+.weather-everyday-weath {
+	margin-top: 12px
+}
+
+.weather-everyday-wind {
+	margin-top: 11px;
+}
+
+.weather-wednesday {
+	left: 275px;
+}
+
+.weather-thusday {
+	left: 364px;
+}
+
+.weather-friday {
+	left: 453px;
+}
+
+.weather-split-1,
+.weather-split-2,
+.weather-split-3,
+.weather-split-4 {
+	width: 1px;
+	height: 180px;
+	top: 58px;
+	position: absolute;
+	background: #FFFFFF;
+	opacity: 0.15;
+}
+
+.weather-tuesday:hover,
+.weather-wednesday:hover,
+.weather-thusday:hover,
+.weather-friday:hover {
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, .015), rgba(255, 255, 255, .15));
+}
+
+.weather-split-1 {
+	left: 185px;
+}
+
+.weather-split-2 {
+	left: 274px;
+}
+
+.weather-split-3 {
+	left: 363px;
+}
+
+.weather-split-4 {
+	left: 452px;
+}
+
+
+/*///////////////第一个选项卡////////////////*/
+
+.weather-xlon-1 {
+	width: 538px;
+	height: 114px;
+	position: relative;
+	font-size: 10px;
+	color: #FFFFFF;
+	top: 251px;
+	background: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+}
+
+.weather-xlon-1-y {
+	float: left;
+	width: 35px;
+	height: 86px;
+	font-size: 10px;
+	position: absolute;
+}
+
+.weather-xlon-1-y li {
+	padding-top: 4px;
+	text-indent: 18px;
+	font-size: 10px;
+}
+
+.weather-xlon-1-crow {
+	width: 504px;
+	height: 91px;
+	position: absolute;
+	left: 36px;
+	z-index: 5;
+}
+
+.weather-xlon-1-main {
+	float: left;
+	width: 56px;
+	height: 91px;
+}
+
+.weather-xlon-1-main-data {
+	width: 56px;
+	height: 16px;
+	margin-top: 35px;
+	text-align: center;
+	font-size: 9px;
+}
+
+.weather-xlon-1-main-dot {
+	width: 5px;
+	height: 5px;
+	border-radius: 5px;
+	background: #FFFFFF;
+	margin-left: 20px;
+}
+
+.weather-xlon-1-main:hover .weather-xlon-1-main-dot {
+	background: #78E8FF;
+}
+
+.weather-xlon-1-x {
+	;
+	position: absolute;
+	left: 48px;
+	top: 91px;
+	width: 504px;
+}
+
+.weather-xlon-1-x li {
+	float: left;
+	width: 56px;
+	text-align: left;
+	font-size: 12px;
+}
+
+
+/*///////////////第二个选项卡////////////////*/
+
+.weather-xlon-2 {
+	width: 538px;
+	height: 114px;
+	position: relative;
+	font-size: 10px;
+	color: #FFFFFF;
+	top: 251px;
+	background: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+}
+
+.weather-xlon-2-main {
+	float: left;
+	width: 56px;
+	height: 91px;
+}
+
+.dot2-sp {
+	width: 0;
+	/*调节成梯形，三角形为0*/
+	height: 0;
+	background: none;
+	border-style: solid;
+	border-color:  transparent transparent transparent #FFFFFF;
+	/*调节三角形朝向*/
+	border-width: 5px 0 5px 15px;
+	/*调节各个角度和三角形大小*/
+	margin-top: 62px;
+	margin-left: 20px;
+	border-radius: 0;
+}
+
+.dot2 {
+	margin-top: 80px;
+}
+.weather-xlon-2-main:hover .weather-xlon-1-main-dot {
+	background: #78E8FF;
+}
+.weather-xlon-2-main:hover .dot2-sp{
+	border-color:  transparent transparent transparent #78E8FF;
+}
+
+.weather-xlon-2-main:hover .weather-xlon-2-data-contentshide{
+	display: block;
+}
+
+.weather-xlon-2-data-contentshide{
+	width: 100px;
+	/*position: absolute;*/
+	top: 108px;
+	margin-left: -30px;
+	z-index: 1000;
+	font-size: 12px;
+	display: none;
+}
+
+.weather-xlon-2-data-ico{
+	/*position: absolute;*/
+	margin-left: 45px;
+	border-color: transparent transparent white transparent;
+	border-style: solid;
+	border-width: 0 5px 5px 5px;	
+	width: 0;
+	height: 0;
+	top: 1px;
+	z-index: 2;
+}
+
+.weather-xlon-2-data-xlcont{
+	background: #FFFFFF;
+	margin-top: 5px;
+	color: #555;
+	padding: 10px;
+}
+
+.weather-xlon-2-data-xlcont p{
+	text-shadow: none;
+	text-align: left;
+}
+
+/*///////////////第三个选项卡////////////////*/
+.weather-xlon-3 {
+	width: 538px;
+	height: 114px;
+	position: relative;
+	font-size: 10px;
+	color: #FFFFFF;
+	top: 251px;
+	background: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+}
+.weather-xlon-3-main{
+	width: 498px;
+	height: 98px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 20px;
+	font-size: 12px;
+}
+
+.weather-xlon-3-data{
+	width: 55px;
+	height: 86px;
+	float: left;
+	background: url(../img/icobg.png) no-repeat right 0;
+}
+
+.weather-xlon-3-data span {
+	display: block;
+	width: 55px;
+	height: 18px;
+	text-align: center;
+} 
+
+.weather-xlon-3-png-wapper{
+	width: 18px;
+	height: 24px;
+	padding: 13px 0 13px 18px;
+}
+
+.weather-xlon-3-png-water{
+	width: 18px!important;
+	height: 23px!important;
+	background: url(../img/icowater.png) no-repeat;
+}
+
+#weather_xlon-canvas-2{
+	left: 43px;
+}
+
+/*///////////////第四个选项卡////////////////*/
+.weather-xlon-4 {
+	width: 538px;
+	height: 114px;
+	position: relative;
+	font-size: 10px;
+	color: #FFFFFF;
+	top: 251px;
+	background: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+}
+
+.weather-xlon-4-main{
+	padding-top: 8px;
+	width: 538px;
+	height: 106px;
+}
+
+.weather-xlon-4-data{
+	position: relative;
+	width: 240px;
+	float: left;
+	margin-left: 17px;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	line-height: 32px;
+	height: 32px;
+}
+
+.weather-xlon-4-data-contentshow{
+	font-size: 16px;
+}
+
+.weather-xlon-4-data-contentshow:hover .weather-xlon-4-data-contentshide{
+	display: block;
+}
+
+.weather-xlon-4-data-contentshide{
+	width: 335px;
+	height: 89px;
+	left: 0;
+	top: 27px;
+	position: absolute;
+	font-size: 12px;
+	z-index: 1000;
+	display: none;
+}
+
+
+.weather-xlon-4-data-ico{
+	position: absolute;
+	left: 35px;
+	border-color: transparent transparent white transparent;
+	border-style: solid;
+	border-width: 0 5px 5px 5px;	
+	width: 0;
+	height: 0;
+	top: 1px;
+	z-index: 2;
+}
+
+.weather-xlon-4-data-xlcont{
+	background: #FFFFFF;
+	margin-top: 5px;
+	color: #555;
+	padding: 10px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.weather-xlon-4-data-xltitle{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.weather-xlon-4-data-xltipcontent{
+	line-height: 20px;
+}
+
+.show {
+	display: block;
+}
+.hide {
+	display: none;
+}
+.active {
+	background: rgba(255, 255, 255, 0.1);
+}
+#weather-bottom {
+	width: 538px;
+	height: 27px;
+	position: absolute;
+	top: 365px;
+}
+#weather-bottom li {
+	float: left;
+}
+.weather-bottom-1 {
+	width: 106px;
+}
+#weather-bottom a {
+	display: block;
+	height: 27px;
+	font-size: 12px;
+	line-height: 26px;
+	text-align: center;
+	color: #FFFFFF;
+	background: rgba(255, 255, 255, 0.1);
+}
+.weather-bottom-2,
+.weather-bottom-3,
+.weather-bottom-4 {
+	width: 78px;
+	background: rgba(255, 255, 255, 0.2);
+	margin-left: 1px;
+}
+#weather_xlon-canvas {
+	top: 0px;
+	left: 43px;
+	/*	border: 1px solid black;*/
+}
+
+.weather-outside-bottom {
+	font-size: 12px;
+    color: #666;
+    padding: 12px 0 5px;
+    line-height: 20px;
+}
+
+.weather-outside-bottom a {
+	text-decoration: underline;
+}

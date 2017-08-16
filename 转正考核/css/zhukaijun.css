@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+.weather {
+	/*margin: 0 auto;*/
+	width: 539px;
+	height: 405px;
+	position: relative;
+	font-family: "微软雅黑";
+	background-image: -webkit-linear-gradient(top, rgb(72, 86, 99), rgb(161, 184, 202));
+}

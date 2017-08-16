@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>weather</title>
+		<link rel="stylesheet" type="text/css" href="css/weather.css" />
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/canvas.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rainfall.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/weather.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div id="weather-all">
+			<div id="weather-head-nums">
+				<div class="weather-head-nums-inner" id="weather-head-nums-inner">
+					<div class="weather-searchtools-conter">
+						<span class="weather-searchtools-conter-close" id="weather-tools">
+						<i class="weather-top-icon"></i>收起工具
+					</span>
+						<span class="weather-searchtools-conter-time">
+						时间不限<i class="weather-triangledown-icon"></i>
+						<div class="weather-searchtools-time-con">
+							sssss
+						</div>
+					</span>
+						<span class="weather-searchtools-conter-file">
+						所有网页和文件<i class="weather-triangledown-icon"></i>
+					</span>
+						<span class="weather-searchtools-conter-serach">
+						站点内检索<i class="weather-triangledown-icon"></i>
+					</span>
+					</div>
+
+					<div class="weather-nums">
+						<div class="weather-nums-searchtools">
+							<i class="weather-searchtools-spanner"></i>搜索工具
+						</div>
+						百度为您找到相关结果约95,800,000个
+					</div>
+				</div>
+			</div>
+
+			<div id="weather-head-gap">
+				<h3 class="weather-head-gap">
+					<a href="#" class="weather-head-gap-title">
+						重庆<em>天气</em>预报_一周<em>天气</em>预报_中国<em>天气</em>网
+					</a>
+				<!--<b class="weather-head-gap-invite">
+					<i>- 最近访问：</i>
+					<a href="#">开县天气</a>
+				</b>-->
+				</h3>
+			</div>
+			<div class="weather">
+				<div id="weather-background">
+					<div id="weather-background-overcast"></div>
+					<div class="weather-background-cloudy"></div>
+					<div class="weather-background-sun">
+						<img src="img/light.png" class="weather-sun-png" />
+						<img src="img/ring.png" class="weather-ring-png-1" />
+						<img src="img/ring.png" class="weather-ring-png-2" />
+						<img src="img/ring.png" class="weather-ring-png-3" />
+					</div>
+					<div id="weather-background-rain" style="width: 539px;height: 405px;position: absolute;opacity: 1;overflow: hidden;"></div>
+
+				</div>
+
+				<a href="#">
+					<div class="weather-today">
+						<p class="weather-today-date">05月22日 周一 农历四月廿七</p>
+						<p class="weather-today-date weather-today-quality">实时空气质量:
+							<em style="background: #4cc74c;">
+							<b>26</b>&nbsp;优
+						</em>
+						</p>
+						<div class="weather-today-realtime">
+							<div class="weather-today-realtime-pic">
+
+							</div>
+							<div class="weather-today-realtime-info">
+								<span class="weather-today-realtime-title">21</span>
+								<span class="weather-today-realtime-data">
+								<i class="realtme-data-sup">℃</i>
+								<i class="realtme-data-sub">阵雨(实时)</i>
+							</span>
+							</div>
+						</div>
+						<p class="weather-today-temp">19 ~ 23℃</p>
+						<p class="weather-today-weath">阵雨</p>
+						<p class="weather-today-wind">微风</p>
+					</div>
+				</a>
+				<div class="weather-split-1">
+
+				</div>
+				<a href="#">
+					<div class="weather-tuesday weather-week">
+						<p class="weather-everyday-date">周二</p>
+						<p class="weather-everyday-datetoday">05月23日</p>
+						<div class="weather-every-pic">
+
+						</div>
+						<p class="weather-everyday-temp">21 ~ 25℃</p>
+						<p class="weather-everyday-weath">阴转阵雨</p>
+						<p class="weather-everyday-wind">微风</p>
+					</div>
+				</a>
+				<div class="weather-split-2">
+
+				</div>
+				<a href="#">
+					<div class="weather-wednesday weather-week">
+						<p class="weather-everyday-date">周三</p>
+						<p class="weather-everyday-datetoday">05月24日</p>
+						<div class="weather-every-pic" style="background: url(img/1.png);">
+
+						</div>
+						<p class="weather-everyday-temp">22 ~ 30℃</p>
+						<p class="weather-everyday-weath">晴</p>
+						<p class="weather-everyday-wind">微风</p>
+					</div>
+				</a>
+				<div class="weather-split-3">
+
+				</div>
+				<a href="#">
+					<div class="weather-thusday weather-week">
+						<p class="weather-everyday-date">周四</p>
+						<p class="weather-everyday-datetoday">05月25日</p>
+						<div class="weather-every-pic" style="background: url(img/5.png);">
+
+						</div>
+						<p class="weather-everyday-temp">19 ~ 26℃</p>
+						<p class="weather-everyday-weath">多云</p>
+						<p class="weather-everyday-wind">微风</p>
+					</div>
+				</a>
+				<div class="weather-split-4">
+
+				</div>
+				<a href="#">
+					<div class="weather-friday weather-week">
+						<p class="weather-everyday-date">周五</p>
+						<p class="weather-everyday-datetoday">05月26日</p>
+						<div class="weather-every-pic" style="background: url(img/9.png);">
+
+						</div>
+						<p class="weather-everyday-temp">19 ~ 24℃</p>
+						<p class="weather-everyday-weath">阵雨转阴</p>
+						<p class="weather-everyday-wind">微风</p>
+					</div>
+				</a>
+				
+				
+				<div id="tab-list">
+					<div class="weather-xlon-1 weather-div show">
+						<canvas id="weather_xlon-canvas" width="480" height="86" style="position: absolute;z-index: 2;"></canvas>
+						<ul class="weather-xlon-1-y">
+							<li>30</li>
+							<li>26</li>
+							<li>22</li>
+							<li>18</li>
+							<li>14</li>
+						</ul>
+						<div class="weather-xlon-1-crow">
+							<div class="weather-xlon-1-main" style="left: 0;">
+								<div class="weather-xlon-1-main-data">
+									21°C
+
+								</div>
+								<div class="weather-xlon-1-main-dot">
+
+								</div>
+							</div>
+							<div class="weather-xlon-1-main" style="left: 56px;">
+								<div class="weather-xlon-1-main-data" style="margin-top: 31px;">
+									22°C
+
+								</div>
+								<div class="weather-xlon-1-main-dot">
+
+								</div>
+							</div>
+							<div class="weather-xlon-1-main" style="left: 112px;">
+								<div class="weather-xlon-1-main-data" style="margin-top: 39px;">
+									20°C
+
+								</div>
+								<div class="weather-xlon-1-main-dot">
+
+								</div>
+							</div>
+							<div class="weather-xlon-1-main" style="left: 168px;">
+								<div class="weather-xlon-1-main-data" style="margin-top: 43px;">
+									19°C
+
+								</div>
+								<div class="weather-xlon-1-main-dot">
+
+								</div>
+							</div>
+							<div class="weather-xlon-1-main" style="left: 224px;">
+								<div class="weather-xlon-1-main-data" style="margin-top: 43px;">
+									19°C
+
+								</div>
+								<div class="weather-xlon-1-main-dot">
+
+								</div>
+							</div>
+							<div class="weather-xlon-1-main" style="left: 280px;">
+								<div class="weather-xlon-1-main-data" style="margin-top: 35px;">
+									21°C
+
+								</div>
+								<div class="weather-xlon-1-main-dot">
+
+								</div>
+							</div>
+							<div class="weather-xlon-1-main" style="left: 336px;">
+								<div class="weather-xlon-1-main-data" style="margin-top: 27px;">
+									23°C
+
+								</div>
+								<div class="weather-xlon-1-main-dot">
+
+								</div>
+							</div>
+							<div class="weather-xlon-1-main" style="left: 392px;">
+								<div class="weather-xlon-1-main-data" style="margin-top: 23px;">
+									24°C
+
+								</div>
+								<div class="weather-xlon-1-main-dot">
+
+								</div>
+							</div>
+							<div class="weather-xlon-1-main" style="left: 448px;">
+								<div class="weather-xlon-1-main-data" style="margin-top: 27px;">
+									23°C
+
+								</div>
+								<div class="weather-xlon-1-main-dot">
+
+								</div>
+							</div>
+						</div>
+						<ul class="weather-xlon-1-x">
+							<li>现在</li>
+							<li>23点</li>
+							<li>02点</li>
+							<li>05点</li>
+							<li>08点</li>
+							<li>11点</li>
+							<li>14点</li>
+							<li>17点</li>
+							<li>20点</li>
+						</ul>
+					</div>
+					<div class="weather-xlon-2 weather-div hide">
+						<canvas id="weather_xlon-canvas-2" width="480" height="86" style="position: absolute;z-index: 2;"></canvas>
+						<ul class="weather-xlon-1-y">
+							<li>8</li>
+							<li>6</li>
+							<li>4</li>
+							<li>2</li>
+							<li>0</li>
+						</ul>
+						<div class="weather-xlon-1-crow">
+							<div class="weather-xlon-2-main" style="left: 0;">
+								<div class="dot2-sp"></div>
+								<div class="weather-xlon-2-data-contentshide">
+									<span class="weather-xlon-2-data-ico"></span>
+									<div class="weather-xlon-2-data-xlcont">
+										<p>风向：西北风</p>
+										<p>风力：2级</p>
+									</div>
+								</div>
+							</div>
+							<div class="weather-xlon-2-main" style="left: 56px;">
+								<div class="weather-xlon-1-main-dot dot2"></div>
+								<div class="weather-xlon-2-data-contentshide">
+									<span class="weather-xlon-2-data-ico"></span>
+									<div class="weather-xlon-2-data-xlcont">
+										<p>风向：无</p>
+										<p>风力：微风</p>
+									</div>
+								</div>
+							</div>
+							<div class="weather-xlon-2-main" style="left: 112px;">
+								<div class="weather-xlon-1-main-dot dot2"></div>
+								<div class="weather-xlon-2-data-contentshide">
+									<span class="weather-xlon-2-data-ico"></span>
+									<div class="weather-xlon-2-data-xlcont">
+										<p>风向：无</p>
+										<p>风力：微风</p>
+									</div>
+								</div>
+							</div>
+							<div class="weather-xlon-2-main" style="left: 168px;">
+								<div class="weather-xlon-1-main-dot dot2"></div>
+								<div class="weather-xlon-2-data-contentshide">
+									<span class="weather-xlon-2-data-ico"></span>
+									<div class="weather-xlon-2-data-xlcont">
+										<p>风向：无</p>
+										<p>风力：微风</p>
+									</div>
+								</div>
+							</div>
+							<div class="weather-xlon-2-main" style="left: 224px;">
+								<div class="weather-xlon-1-main-dot dot2"></div>
+								<div class="weather-xlon-2-data-contentshide">
+									<span class="weather-xlon-2-data-ico"></span>
+									<div class="weather-xlon-2-data-xlcont">
+										<p>风向：无</p>
+										<p>风力：微风</p>
+									</div>
+								</div>
+							</div>
+							<div class="weather-xlon-2-main" style="left: 280px;">
+								<div class="weather-xlon-1-main-dot dot2"></div>
+								<div class="weather-xlon-2-data-contentshide">
+									<span class="weather-xlon-2-data-ico"></span>
+									<div class="weather-xlon-2-data-xlcont">
+										<p>风向：无</p>
+										<p>风力：微风</p>
+									</div>
+								</div>
+							</div>
+							<div class="weather-xlon-2-main" style="left: 336px;">
+								<div class="weather-xlon-1-main-dot dot2"></div>
+								<div class="weather-xlon-2-data-contentshide">
+									<span class="weather-xlon-2-data-ico"></span>
+									<div class="weather-xlon-2-data-xlcont">
+										<p>风向：无</p>
+										<p>风力：微风</p>
+									</div>
+								</div>
+							</div>
+							<div class="weather-xlon-2-main" style="left: 392px;">
+								<div class="weather-xlon-1-main-dot dot2"></div>
+								<div class="weather-xlon-2-data-contentshide">
+									<span class="weather-xlon-2-data-ico"></span>
+									<div class="weather-xlon-2-data-xlcont">
+										<p>风向：无</p>
+										<p>风力：微风</p>
+									</div>
+								</div>
+							</div>
+							<div class="weather-xlon-2-main" style="left: 448px;">
+								<div class="weather-xlon-1-main-dot dot2"></div>
+								<div class="weather-xlon-2-data-contentshide">
+									<span class="weather-xlon-2-data-ico"></span>
+									<div class="weather-xlon-2-data-xlcont">
+										<p>风向：无</p>
+										<p>风力：微风</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ul class="weather-xlon-1-x">
+							<li>现在</li>
+							<li>23点</li>
+							<li>02点</li>
+							<li>05点</li>
+							<li>08点</li>
+							<li>11点</li>
+							<li>14点</li>
+							<li>17点</li>
+							<li>20点</li>
+						</ul>
+					</div>
+					<div class="weather-xlon-3 weather-div hide">
+						<ul class="weather-xlon-3-main">
+							<li class="weather-xlon-3-data">
+								<span>现在</span>
+								<div class="weather-xlon-3-png-wapper">
+									<span class="weather-xlon-3-png-water"></span>
+								</div>
+								<span>0mm</span>
+							</li>
+							<li class="weather-xlon-3-data">
+								<span>02点</span>
+								<div class="weather-xlon-3-png-wapper">
+									<span class="weather-xlon-3-png-water"></span>
+								</div>
+								<span>0mm</span>
+							</li>
+							<li class="weather-xlon-3-data">
+								<span>05点</span>
+								<div class="weather-xlon-3-png-wapper">
+									<span class="weather-xlon-3-png-water"></span>
+								</div>
+								<span>0mm</span>
+							</li>
+							<li class="weather-xlon-3-data">
+								<span>07点</span>
+								<div class="weather-xlon-3-png-wapper">
+									<span class="weather-xlon-3-png-water"></span>
+								</div>
+								<span>0mm</span>
+							</li>
+							<li class="weather-xlon-3-data">
+								<span>09点</span>
+								<div class="weather-xlon-3-png-wapper">
+									<span class="weather-xlon-3-png-water"></span>
+								</div>
+								<span>0mm</span>
+							</li>
+							<li class="weather-xlon-3-data">
+								<span>11点</span>
+								<div class="weather-xlon-3-png-wapper">
+									<span class="weather-xlon-3-png-water"></span>
+								</div>
+								<span>0mm</span>
+							</li>
+							<li class="weather-xlon-3-data">
+								<span>13点</span>
+								<div class="weather-xlon-3-png-wapper">
+									<span class="weather-xlon-3-png-water"></span>
+								</div>
+								<span>0mm</span>
+							</li>
+							<li class="weather-xlon-3-data">
+								<span>15点</span>
+								<div class="weather-xlon-3-png-wapper">
+									<span class="weather-xlon-3-png-water"></span>
+								</div>
+								<span>0mm</span>
+							</li>
+							<li class="weather-xlon-3-data">
+								<span>17点</span>
+								<div class="weather-xlon-3-png-wapper">
+									<span class="weather-xlon-3-png-water"></span>
+								</div>
+								<span>0mm</span>
+							</li>
+						</ul>
+					</div>
+					<div class="weather-xlon-4 weather-div hide">
+						<ul class="weather-xlon-4-main">
+							<li class="weather-xlon-4-data">
+								<div class="weather-xlon-4-data-contentshow">穿衣：炎热
+									<div class="weather-xlon-4-data-contentshide">
+										<span class="weather-xlon-4-data-ico"></span>
+										<div class="weather-xlon-4-data-xlcont">
+											<div class="weather-xlon-4-data-xltitle">
+												穿衣指数：炎热
+											</div>
+											<div class="weather-xlon-4-data-xltipcontent">
+												天气炎热，建议着短衫、短裙、短裤、薄型T恤衫等清凉夏季服装。
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="weather-xlon-4-data">
+								<div class="weather-xlon-4-data-contentshow">洗车：较适宜
+									<div class="weather-xlon-4-data-contentshide">
+										<span class="weather-xlon-4-data-ico"></span>
+										<div class="weather-xlon-4-data-xlcont">
+											<div class="weather-xlon-4-data-xltitle">
+												洗车指数：较适宜
+											</div>
+											<div class="weather-xlon-4-data-xltipcontent">
+												较适宜洗车，未来一天无雨，风力较小，擦洗一新的汽车至少能保持一天。
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="weather-xlon-4-data">
+								<div class="weather-xlon-4-data-contentshow">感冒：少发
+									<div class="weather-xlon-4-data-contentshide">
+										<span class="weather-xlon-4-data-ico"></span>
+										<div class="weather-xlon-4-data-xlcont">
+											<div class="weather-xlon-4-data-xltitle">
+												紫外线强度指数：强
+											</div>
+											<div class="weather-xlon-4-data-xltipcontent">
+												紫外线辐射强，建议涂擦SPF20左右、PA++的防晒护肤品。避免在10点至14点暴露于日光下。
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="weather-xlon-4-data">
+								<div class="weather-xlon-4-data-contentshow">运动：较不宜
+									<div class="weather-xlon-4-data-contentshide">
+										<span class="weather-xlon-4-data-ico"></span>
+										<div class="weather-xlon-4-data-xlcont">
+											<div class="weather-xlon-4-data-xltitle">
+												运动指数：较不宜
+											</div>
+											<div class="weather-xlon-4-data-xltipcontent">
+												天气较好，无雨水困扰，但考虑气温很高，请注意适当减少运动时间并降低运动强度，运动后及时补充水分。
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="weather-xlon-4-data" style="border-bottom: none;">
+								<div class="weather-xlon-4-data-contentshow">紫外线强度：很强
+									<div class="weather-xlon-4-data-contentshide">
+										<span class="weather-xlon-4-data-ico"></span>
+										<div class="weather-xlon-4-data-xlcont">
+											<div class="weather-xlon-4-data-xltitle">
+												紫外线强度指数：强
+											</div>
+											<div class="weather-xlon-4-data-xltipcontent">
+												紫外线辐射强，建议涂擦SPF20左右、PA++的防晒护肤品。避免在10点至14点暴露于日光下。
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div id="weather-bottom">
+					<ul>
+						<li class="weather-bottom-1 weather-bottom-li">
+							<a href="#">24小时温度</a>
+						</li>
+						<li class="weather-bottom-2 weather-bottom-li">
+							<a href="#">风力风向</a>
+						</li>
+						<li class="weather-bottom-3 weather-bottom-li">
+							<a href="#">降水量</a>
+						</li>
+						<li class="weather-bottom-4 weather-bottom-li">
+							<a href="#">相关指数</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="weather-outside-bottom">
+				中国气象局2017年06月13日14时发布
+				<a href="###">7天预报</a>
+				<a href="###">8-15天预报</a>
+				<a href="###">周边景点天气</a>
+			</div>
+		</div>
+	</body>
+
+	<script>
+		var box = document.getElementById("weather-background-rain");
+		var i = 1;//雨的数量
+
+		function rainfall() { //下落方法
+			var a = document.createElement("div"); //创建一个雨点
+			
+			a.style.width = Math.random() * (1 - 0.5) + 1 + 'px';
+			a.style.height = Math.random() * (4 - 1) + 4 + 'px'; //定义雨的高度变化范围
+			a.style.backgroundColor = "rgb(255,255,255)"; //定义雨的样式
+			a.style.position = 'absolute';
+			a.style.opacity = Math.random() * (0.5 - 0.01) + 0.01; //调节透明度
+			
+			a.style.top = parseInt(box.style.height) * (Math.random() > 1 ? Math.random() : 0) + 'px';
+			a.style.left = parseInt(box.style.width) * Math.random() + 'px';
+			//a.style.width = parseInt(a.style.width) * Math.random() + 'px';
+			a.id =i;
+			i++;       
+			box.appendChild(a); //递增节点
+			
+			falldown(a.id,a, Math.random()* (6 - 1) + 6); //下落随机,回调雨点下落函数
+			var x = 1 //控制雨的密度
+			setTimeout('rainfall()', x);
+		};
+		
+
+		function falldown(a, e, speed) {
+			var a1 = document.getElementById(a);//取出函数中的形参。
+			a1.style.top = parseInt(a1.style.top) + speed + 'px';
+			if(parseInt(a1.style.top) < 250) {
+				e = setTimeout("falldown(\"" + a + "\",\"" + e + "\"," + speed + ")", 20);
+				
+			} else{
+				//removeElement(a1);
+				box.removeChild(a1);
+			};
+		};
+		
+		/*function removeElement(_element) { //移除标签的函数
+			var _parentElement = _element.parentNode;
+			if(_parentElement) {
+				_parentElement.removeChild(_element);
+			};
+		};*/
+		rainfall();
+	</script>
+
+	</body>
+
+</html>
