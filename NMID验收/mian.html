@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>慕课网</title>
+    <link rel="stylesheet" type="text/css" href="css/slide.css"/>
+    <link rel="shortcut icon" href="fire.png" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery.1.10.2.js"></script>
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/slide.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/change.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/text-slide.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body class="body">
+<audio src="music/金玟岐 - 岁月神偷.mp3" autoplay="autoplay"></audio>
+<div id="header">
+	<a href="###"><img src="img/logo.png"/></a>
+	<ul class="leader">
+		<li><a href="###">课程</a></li>
+		<li><a href="###">职业路径</a><img src="img/new.png"/></li>
+		<li><a href="###">实战</a></li>
+		<li><a href="###">猿问</a></li>
+		<li><a href="###">手记</a></li>
+	</ul>
+	<form class="form">
+        <input class="search-input" placeholder="前端小白">
+        <input type="submit" value="" class="search-button"/>
+      </form >
+      <div class="header-pay">
+      	<a href="###">
+      	<!--<div class="header-pay-content">
+      		
+      	</div>-->
+      	<div class="icon-pay"></div><span>购物车</span></a>
+      </div>
+      <a href="###"><div class="header-notice"></div></a>
+      <div class="header-head">
+	      <div class="header-head-img">
+	      	<div class="header-head-content pad20">
+	      		<a href="###"><div class="head-logo left"></div>
+	      		<h4 class="light">伯牙期雨</h4><p>经验441,4 积分1</p></a>
+	      		<div class="content-box">
+		      		<div class="box21 left pad10" style="clear: both;">
+		      			<div class="box-logo box21-logo"></div><span>我的课程</span>
+		      		</div>
+		      		<div class="box22 left pad10">
+		      			<div class="box-logo box22-logo"></div><span>订单中心</span>
+		      		</div>
+		      		<div class="box23 left pad10">
+		      			<div class="box-logo box23-logo"></div><span>积分商城</span>
+		      		</div>
+		      		<div class="box24 left pad10">
+		      			<div class="box-logo box24-logo"></div><span>个人设置</span>
+		      		</div>
+	      		</div>
+	      		<a href="###"><span class="right exit">安全退出</span></a>
+	      	</div> 
+	      </div>
+      </div>
+      
+      
+</div>
+<div id="container" class="container"> 
+    <div id="list" style="left: -1200px;">  <!--图片多少,轮播图有多大就用全局变量将此替换。-->
+        <img src="img/58f9e7660001a00112000460.jpg" alt="1"/>
+        <img src="img/58f9e7660001a00112000460.jpg" alt="1"/>
+        <img src="img/58ff14a5000159e212000460.jpg" alt="2"/>
+        <img src="img/58f9e2e500010ef612000460.jpg" alt="3"/>
+        <img src="img/58feeb0e0001cd6512000460.jpg" alt="4"/>
+        <img src="img/58ff09780001d95712000460.jpg" alt="5"/>
+        <img src="img/58ff09780001d95712000460.jpg" alt="5"/><!--这里做无缝衔接-->
+    </div>
+    <div id="buttons">   <!--按钮样式的改变-->
+        <span index="1" class="on"></span>
+        <span index="2"></span>
+        <span index="3"></span>
+        <span index="4"></span>
+        <span index="5"></span>
+    </div>
+    <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+    <a href="javascript:;" id="next" class="arrow">&gt;</a>
+    
+<div id="tab-list">
+    <ul id="ul1">
+        <li><a href="###">前端开发<span class="mini-arrow inline-block"></span></a></li>
+		<li><a href="###">后端开发<span class="mini-arrow inline-block"></span></a></li>
+		<li><a href="###">移动开发<span class="mini-arrow inline-block"></span></a></li>
+		<li><a href="###">数据库<span class="mini-arrow inline-block"></span></a></li>
+		<li><a href="###">云计算&大数据<span class="mini-arrow inline-block"></span></a></li>
+		<li><a href="###">运维&测试<span class="mini-arrow inline-block"></span></a></li>
+		<li><a href="###">UI设计<span class="mini-arrow inline-block"></span></a></li>
+    </ul>
+    <div class="hide" style="background-image: url(img/feBg.png);">
+       <h3>分类目录</h3>
+       <p><strong class="text1">基础：</strong><a href="###">HTML/CSS</a>/<a href="###">Javascript</a>/<a href="###">JQuery</a></p>
+       <p><strong class="text1">进阶：</strong><a href="###">Html5</a>/<a href="###">CSS3</a>/<a href="###">Node.js</a>/
+       	<a href="###">AngularJS</a>/<a href="###">Bootstrap</a>/<a href="###">React</a>/
+       	<a href="###">Sass/Less</a>/<a href="###">Vue.js</a>/<a href="###">WebApp</a>
+       </p>
+       <p><strong class="text1">其他：</strong><a href="###">前端工具</a></p>
+       <h3 class="recommend">课程推荐</h3>
+       <p><a href="###" class="text2"><span>职业路径</span>前端小白入门手册</a></p>
+       <p><a href="###" class="text2"><span>职业路径</span>HTML5与CSS3实现动态网页</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">实战</span>React高级实战 - 打造大众点评WebApp</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>JS动画效果</a></p>
+    </div>    
+    <div class="hide" style="background-image: url(img/backBg.png);">
+        <h3>分类目录</h3>
+       <p><a href="###">PHP</a>/<a href="###">Java</a>/<a href="###">Python</a>/
+       	<a href="###">C</a>/<a href="###">C++</a>/<a href="###">Go</a>/
+       	<a href="###">C###</a>/<a href="###">Vue.js</a>/<a href="###">Ruby</a>
+       </p>
+       <h3 class="recommend">课程推荐</h3>
+       <p><a href="###" class="text2"><span>职业路径</span>PHP从基础语法到原生项目开发</a></p>
+       <p><a href="###" class="text2"><span>职业路径</span>Java基础语法与常用工具类</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">实战</span>ThinkPHP5.0+小程序商城构建全栈应用</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>Java中的文件上传下载</a></p>
+    </div>    
+    <div class="hide" style="background-image: url(img/mobileBg.png);">
+        <h3>分类目录</h3>
+       <p><a href="###">Android</a>/<a href="###">iOS</a>/<a href="###">Unity 3D</a>/
+       	<a href="###">Cocos2d-x</a>
+       </p>
+       <h3 class="recommend">课程推荐</h3>
+       <p><a href="###" class="text2"><span>职业路径</span>Andriod从界面到数据存储</a></p>
+       <p><a href="###" class="text2"><span>职业路径</span>iOS界面优化与数据存储</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">实战</span>React Native开发跨平台GitHub App</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>多种多样的App主界面Tab实现方法</a></p>
+    </div>
+    <div class="hide" style="background-image: url(img/dataBg.png);">
+         <h3>分类目录</h3>
+       <p><a href="###">MySQL</a>/<a href="###">MongoDB</a>/<a href="###">Oracle</a>/
+       	<a href="###">SQL Server</a>
+       </p>
+       <h3 class="recommend">课程推荐</h3>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">实战</span>高性能高可用Yii 2.0电商平台 高级组件 MySQL LVS</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">实战</span>高性能可扩展MySQL数据库设计及架构优化 电商项目</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>Oracle存储过程和自定义函数</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>MySQL开发技巧（一）</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>Oracle触发器</a></p>
+    </div>
+    <div class="hide" style="background-image: url(img/bigdataBg.png);">
+         <h3>分类目录</h3>
+       <p><a href="###">大数据</a>/<a href="###">云计算</a></a>
+       </p>
+       <h3 class="recommend">课程推荐</h3>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>Hadoop大数据平台架构与实践--基础篇</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>Python-走进Requests库a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>“OpenStack基础</a></p>
+    </div>
+    <div class="hide"  style="background-image: url(img/textBg.png);">
+         <h3>分类目录</h3>
+       <p><a href="###">测试</a>/<a href="###">Linux</a>
+       </p>
+       <h3 class="recommend">课程推荐</h3>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">实战</span>Android自动化测试实战  工具 框架 脚本</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">实战</span>Android专项测试-Python篇  10年测试经验讲师</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>如何写好测试用例</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>Linux 智能DNS</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>“Linux系统扫描技术及安全防范</a></p>
+    </div>
+    <div class="hide" style="background-image: url(img/imgBg.png);">
+         <h3>分类目录</h3>
+       <p><a href="###">动画动效</a>/<a href="###">APPUI设计</a>/<a href="###">设计工具</a>/
+       	<a href="###">设计基础</a>
+       </p>
+       <h3 class="recommend">课程推荐</h3>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>“Doge”变身术</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>Pscc全面技能培训</a></p>
+       <p><a href="###"><span style="color: ###4d555d;background: ###f3f5f7;">课程</span>“Doge”变化术</a></p>
+    </div>
+</div>  
+
+
+</div>
+<div class="slide-bottom">
+	<a href="###"><div class="pic1"></div></a>
+	<a href="###"><div class="pic2"></div></a>
+	<a href="###"><div class="pic3"></div></a>
+	<a href="###"><div class="pic4"></div></a>
+	<a href="###"><div class="pic5"></div></a>
+</div>
+<h2 class="wrap light">实战推荐<a href="###" class="right more">更多 ></a></h2>
+<div class="introduce wrap">
+	<div class="box1">
+		<div class="box-head box1-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back">
+			Vue.js
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">带你入门Vue2.0及案例开发</h4>
+			<p>从入门到实战全面讲解Vue2.0，用Vue2.0开发一个数字产品电商平台</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">837人在学</span><span class="right money">￥148.00</span>
+		</div>
+	</div>
+	<div class="box2">
+		<div class="box-head box2-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back" style="background: linear-gradient(270deg,rgba(210,115,230,.7),###d273e6);">
+			PHP ThinkPHP
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">ThinkPHP5.0+小程序商城构建全栈应用</h4>
+			<p>TP5+小程序+微信支付+MySQL做一套适用于中小型产品的通用RESTFul API</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">164人在学</span><span class="right money">￥388.00</span>
+		</div>
+	</div>
+	<div class="box3">
+		<div class="box-head box3-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back" style="background: linear-gradient(270deg,rgba(255,115,155,.7),###ff739b);">
+			Vue.js
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">带你入门Vue2.0及案例开发</h4>
+			<p>从入门到实战全面讲解Vue2.0，用Vue2.0开发一个数字产品电商平台</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">348人在学</span><span class="right money">￥199.00</span>
+		</div>		
+	</div>
+	<div class="box4">
+		<div class="box-head box4-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back" style="background: linear-gradient(270deg,rgba(255,115,155,.7),###ff739b);">
+			AngularJS
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">Angular 4.0从入门到实战 打造在线竞拍网站</h4>
+			<p>用Angular新版本和TypeScript开发组件式单页应用</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">312人在学</span><span class="right money">￥388.00</span>
+		</div>		
+	</div>
+	<div class="box5">
+		<div class="box-head box5-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back" style="background: linear-gradient(270deg,rgba(255,115,155,.7),###ff739b);">
+			Java
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">React.js入门基础与案例开发</h4>
+			<p>基础与案例开发完美对接，领悟React.js不一样的开发思想</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">766人在学</span><span class="right money">￥199.00</span>
+		</div>		
+	</div>	
+</div>
+<h2 class="wrap light">免费好课<a href="###" class="right more">更多 ></a></h2>
+<div class="free-class wrap">
+	<div class="box1">
+		<div class="box-head box1-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back">
+			HTML/CSS JavaScript
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">图片预加载</h4>
+			<p>预知发生的行为，提前加载需要的图片</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">中级·817人在学</span>
+		</div>
+	</div>
+	<div class="box2">
+		<div class="box-head box2-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back" style="background: linear-gradient(270deg,rgba(255,115,155,.7),###ff739b);">
+			大数据
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">R语言入门与进阶</h4>
+			<p>这门课将会带领您领略R语言的精髓,打开R语言的大门。</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">中级·159人在学</span>
+		</div>
+	</div>
+	<div class="box3">
+		<div class="box-head box3-head pad10"><span class="right money">￥199.00</span>
+			
+		</div>
+		<div class="box-head box-head-back">
+			Android
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">即时通讯项目里面的语音处理-提高优化篇</h4>
+			<p>语音特效（音量可视化，变调变速）</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">中级·137人在学</span>
+		</div>		
+	</div>
+	<div class="box4">
+		<div class="box-head box4-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back" style="    background: linear-gradient(270deg,rgba(255,115,155,.7),###ff739b);
+"> 
+			Java 云计算
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">第一个docker化的java应用</h4>
+			<p>制作第一个docker化的java应用</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">中级·1499人在学</span>
+		</div>		
+	</div>
+	<div class="box5">
+		<div class="box-head box5-head pad10">
+		
+		</div>
+		<div class="box-head box-head-back" style="    background: linear-gradient(270deg,rgba(210,115,230,.7),###d273e6);
+">
+			PHP
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">php构建即时通讯系统</h4>
+			<p>PHP不仅可以构建Web项目，还可以构建即时通讯应用:如实时聊天、在线游戏</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">中级·1291人在学</span>
+		</div>		
+	</div>		
+</div>
+<h2 class="wrap  light">前端开发工程师<a href="###" class="right more">更多 ></a></h2>
+<div class="front wrap">
+	<div class="box6 box6-1">
+		<div class="box6-logo pad20">
+			<div class="box6-logo-img"></div><span>职业路径</span>
+		</div>
+		<div class="box6-content">
+			<h3>前端小白入门</h3>
+			<a href="###"><span>了解详情</span><div class="mini-arrow right"></div></a>
+		</div>
+		<div class="box6-bottom">
+			<span>· HTML5与CSS3实现动态网页</span>
+		</div>
+	</div>
+	<div class="box7">
+		
+	</div>
+	<div class="box8">
+		
+	</div> 	
+	<div class="box9">
+		<div class="box-head box5-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back" style="background: linear-gradient(270deg,rgba(75,150,220,.7),###4b96dc)">
+			Java
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">React.js入门基础与案例开发</h4>
+			<p>基础与案例开发完美对接，领悟React.js不一样的开发思想</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">766人在学</span>
+		</div>
+	</div>
+	<div class="box10">
+		<div class="box-head box5-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back" style="background:linear-gradient(270deg,rgba(255,150,0,.7),###ff9600)">
+			Java
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">React.js入门基础与案例开发</h4>
+			<p>基础与案例开发完美对接，领悟React.js不一样的开发思想</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">766人在学</span>
+		</div>
+	</div>
+	<div class="box11">
+		<div class="box-head box5-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back" style="background: linear-gradient(270deg,rgba(255,115,155,.7),###ff739b)">
+			Java
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">React.js入门基础与案例开发</h4>
+			<p>基础与案例开发完美对接，领悟React.js不一样的开发思想</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">766人在学</span>
+		</div>
+	</div>
+	<div class="box12">
+		<div class="box-head box5-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back" style="background: linear-gradient(270deg,rgba(0,185,90,.7),###00b95a);">
+			Java
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">React.js入门基础与案例开发</h4>
+			<p>基础与案例开发完美对接，领悟React.js不一样的开发思想</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">766人在学</span>
+		</div>
+	</div>
+</div>
+<h2 class="wrap  light">后台开发工程师<a href="###" class="right more">更多 ></a></h2>
+<div class="back wrap">
+	<div class="box6 box6-2">
+		<div class="box6-logo pad20 box6-2-logo">
+			<span>职业路径</span>
+		</div>
+		<div class="box6-content">
+			<h3>PHP从基础语法到原生项目开发</h3>
+			<a href="###"><span>了解详情</span><div class="mini-arrow right"></div></a>
+		</div>
+		<div class="box6-bottom">
+			<span>· ECShop3从基本使用到二次开发</span>
+		</div>
+	</div>
+	<div class="box7-2"></div>
+	<div class="box9">
+		<div class="box-head box5-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back" style="background: linear-gradient(270deg,rgba(255,115,155,.7),###ff739b);">
+			Java
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">React.js入门基础与案例开发</h4>
+			<p>基础与案例开发完美对接，领悟React.js不一样的开发思想</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">766人在学</span>
+		</div>
+	</div>
+	<div class="box10">
+		<div class="box-head box5-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back" style="background: linear-gradient(270deg,rgba(255,115,155,.7),###ff739b);">
+			Java
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">React.js入门基础与案例开发</h4>
+			<p>基础与案例开发完美对接，领悟React.js不一样的开发思想</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">766人在学</span>
+		</div>
+	</div>
+	<div class="box11">
+		<div class="box-head box5-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back" style="background: linear-gradient(270deg,rgba(255,115,155,.7),###ff739b);">
+			Java
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">React.js入门基础与案例开发</h4>
+			<p>基础与案例开发完美对接，领悟React.js不一样的开发思想</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">766人在学</span>
+		</div>
+	</div>
+	<div class="box12">
+		<div class="box-head box5-head pad10">
+			
+		</div>
+		<div class="box-head box-head-back" style="background: linear-gradient(270deg,rgba(255,115,155,.7),###ff739b);">
+			Java
+		</div>
+		<div class="box-content pad10">
+			<h4 class="course-card-name">React.js入门基础与案例开发</h4>
+			<p>基础与案例开发完美对接，领悟React.js不一样的开发思想</p>
+		</div>
+		<div class="box-bottom pad10">
+			<span class="gray">766人在学</span>
+		</div>
+	</div>
+</div>
+
+<div id="text-slide" class="wrap">
+	<div class="big-box left" style="margin-right: 82px;">
+		<h2 class="light clearfix">热门手记</h2>
+		<div  class="text-slide">
+		<div  class="text-slideTitle">REST与RESTFul API最佳实践</div>
+		<div  id="text-slideBox1">
+		    <ul>
+		        <li><span>Node.js</span><a href="###">说说ES6那些事儿--ES6十问</a></li>
+		        <li><span>JavaScript</span><a href="###">前端工程师是时候学习ES6了</a></li>
+		        <li><span>产品</span><a href="###">REST与RESTFul API最佳实践</a></li>
+		        <li><span>JAVA</span><a href="###">大型项目架构演进过程及思考的点</a></li>
+		        <li><span>Python</span><a href="###">RabbitMQ教程之一：安装及简介</a></li>
+		        <li><span>Node.js</span><a href="###">写js沙箱原来如此简单</a></li>
+		    </ul>
+		</div>
+		<div  class ="text-slideBot"><a href="###">进入手记获得更多 <div class="mini-arrow"></div></a></div>
+		</div>
+	</div>
+	<div class="big-box left">
+		<h2 class="light clearfix">推荐猿问</h2>
+		<div  class="text-slide">
+		<div  class="text-slideTitle">java中如何中断main函数？ </div>
+		<div  id="text-slideBox2">
+		    <ul>
+		        <li><span>Node.js</span><a href="###">说说ES6那些事儿--ES6十问</a></li>
+		        <li><span>JavaScript</span><a href="###">前端工程师是时候学习ES6了</a></li>
+		        <li><span>产品</span><a href="###">REST与RESTFul API最佳实践</a></li>
+		        <li><span>JAVA</span><a href="###">大型项目架构演进过程及思考的点</a></li>
+		        <li><span>Python</span><a href="###">RabbitMQ教程之一：安装及简介</a></li>
+		        <li><span>Node.js</span><a href="###">写js沙箱原来如此简单</a></li>
+		    </ul>
+		</div>
+		<div  class ="text-slideBot"><a href="###">进入猿问获得更多 <div class="mini-arrow"></div></a></div>
+		</div>
+	</div>
+</div>
+<h2 class="wrap light clearfix">慕课精英名师推荐<a href="###" class="right more">更多 ></a></h2>
+<div id="details">
+	<div class="wrap">
+		<div class="cp left">
+			<a href="###" title="">
+				<div class="cp_w overf-h">
+					<div class="cp_y"><img src="img/58db190e0001643d02000200-200-200.jpg"></div>
+					<div class="cp_f text5">王福朋</div>
+				</div>
+				<p class="cp-content pad20 overf-h" title="前端高级工程师，PMP，开源编辑器 wangEditor 作者。现就职于百度。编写的《深入理解Javascript原型和闭包》系列博客是目前国内最受欢迎的学习 Javascript 原型和闭包的文章，另有《CSS知多少》、《深入理解Javascript异步》系列博客">前端高级工程师，PMP，开源编辑器 wangEditor 作者。现就职于百度。编写的《深入理解Javascript原型和闭包》系列博客是目前国内最受欢迎的学习 Javascript 原型和闭包的文章，另有《CSS知多少》、《深入理解Javascript异步》系列博客</p>
+			</a>
+		</div>
+		<div class="cp left">
+			<a href="###" title="">
+				<div class="cp_w overf-h">
+					<div class="cp_y"><img src="img/5344e6d10001867401400140-200-200.jpg"></div>
+					<div class="cp_f text5">快乐呀</div>
+				</div>
+				<p class="cp-content pad20 overf-h" title="先后在360、去哪儿网、今日头条任资深前端工程师，在业务开发和工程架构方面有较多实战经验。">先后在360、去哪儿网、今日头条任资深前端工程师，在业务开发和工程架构方面有较多实战经验。</p>
+			</a>
+		</div>
+		<div class="cp left">
+			<a href="###" title="">
+				<div class="cp_w overf-h">
+					<div class="cp_y"><img src="img/54584cb50001e5b302200220-200-200.jpg"></div>
+					<div class="cp_f text5">7七月</div>
+				</div>
+				<p class="cp-content pad20 overf-h" title="作为微信小程序第一波开发者，他受邀编写小程序开发书籍，不久就会出版。八年研发及团队管理经验，做过程序员、当过项目经理、技术总监、CTO的开发者，他喜欢写代码带来成就感。">作为微信小程序第一波开发者，他受邀编写小程序开发书籍，不久就会出版。八年研发及团队管理经验，做过程序员、当过项目经理、技术总监、CTO的开发者，他喜欢写代码带来成就感。</p>
+			</a>
+		</div>
+		<div class="cp left">
+			<a href="###" title="">
+				<div class="cp_w overf-h">
+					<div class="cp_y"><img src="img/54584e2c00010a2c02200220-200-200.jpg"></div>
+					<div class="cp_f text5">Geely</div>
+				</div>
+				<p class="cp-content pad20 overf-h" title="Geely，丰富的互联网项目经验，公司内部技术讲师，热爱技术，乐于分享。教学格言：把复杂的技术简单化，简单的技术极致化">Geely，丰富的互联网项目经验，公司内部技术讲师，热爱技术，乐于分享。教学格言：把复杂的技术简单化，简单的技术极致化</p>
+			</a>
+		</div>
+		<div class="cp left">
+			<a href="###" title="">
+				<div class="cp_w overf-h">
+					<div class="cp_y"><img src="img/566f7dd600019fdf06000608-200-200.jpg"></div>
+					<div class="cp_f text5">Scott</div>
+				</div>
+				<p class="cp-content pad20 overf-h" title="是国内最早接触 Node.js 的工程师，也是最早用 Node.js 做开发的工程师之一，拥有大量 Node.js 全站开发经验，是新技术的追求者和传播者，对于课程他认真细致，有着近乎完美的追求。">是国内最早接触 Node.js 的工程师，也是最早用 Node.js 做开发的工程师之一，拥有大量 Node.js 全站开发经验，是新技术的追求者和传播者，对于课程他认真细致，有着近乎完美的追求。</p>
+			</a>
+		</div>
+	</div>	
+</div>
+<div id="footer">
+	<div class="footer">
+		<div class="footer-logo">
+			<div class="box31 left"></div>
+			<div class="box32 left"><div class="footer-sprite"></div></div>
+			<div class="box33 left"></div>
+			<div class="box34 left"></div>
+		</div>
+		<div class="clearfix martop20">
+			<!-- <a href="/about/us" target="_blank" title="关于我们">关于我们</a> -->
+			<a href="/about/cooperate" target="_blank" title="企业合作">企业合作</a>
+			<a href="/about/job" target="_blank" title="人才招聘">人才招聘</a>
+			<a href="/about/contact" target="_blank" title="联系我们">联系我们</a>
+			<a href="/about/recruit" target="_blank" title="讲师招募">讲师招募</a>
+			<a href="/about/faq" target="_blank" title="常见问题">常见问题</a>
+			<a href="/user/feedback" target="_blank" title="意见反馈">意见反馈</a>
+			<a href="http://daxue.itext-slide.com/" target="_blank">慕课大学</a>
+			<a href="/about/friendly" target="_blank" title="友情链接">友情链接</a>
+		</div>
+	</div>
+	<p class="text4">© 2017 itext-slide.com  京ICP备 13046642号-2</p>
+</div>
+</body>
+<script type="text/javascript">
+	var area = document.getElementById('text-slideBox1');
+	var iliHeight = 28; //单行滚动的高度
+	var speed = 50; //滚动的速度
+	var time;
+	var delay = 500;
+	area.scrollTop = 0;
+	area.innerHTML += area.innerHTML; //克隆一份一样的内容
+	function startScroll() {
+		time = setInterval("scrollUp()", speed);
+		area.scrollTop++;
+	}
+	
+	function scrollUp() {
+		if(area.scrollTop % iliHeight == 0) {
+			clearInterval(time);
+			setTimeout(startScroll, delay);
+		} else {
+			area.scrollTop++;
+			if(area.scrollTop >= area.scrollHeight / 2) {
+				area.scrollTop = 0;
+			}
+		}
+	}
+	setTimeout(startScroll, delay);
+	
+	var area2 = document.getElementById('text-slideBox2');
+	var iliHeight2 = 28; //单行滚动的高度
+	var speed2 = 50; //滚动的速度
+	var time2;
+	var delay2 = 500;
+	area2.scrollTop = 0;
+	area2.innerHTML += area2.innerHTML; //克隆一份一样的内容
+	function startScroll2() {
+		time2 = setInterval("scrollUp2()", speed2);
+		area2.scrollTop++;
+	}
+	
+	function scrollUp2() {
+		if(area2.scrollTop % iliHeight2 == 0) {
+			clearInterval(time2);
+			setTimeout(startScroll2, delay2);
+		} else {
+			area2.scrollTop++;
+			if(area2.scrollTop >= area2.scrollHeight / 2) {
+				area2.scrollTop = 0;
+			}
+		}
+	}
+	setTimeout(startScroll2, delay2);
+</script>
+</html>

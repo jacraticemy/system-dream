@@ -1,4 +1,4 @@
-window.onload = function() {
+function changejs() {
         var oUl1 = document.getElementById("ul1"); //获取列表的id
         var aLi = oUl1.getElementsByTagName("li");  //获取列表
         var oDiv = document.getElementById("tab-list");//找到父节点

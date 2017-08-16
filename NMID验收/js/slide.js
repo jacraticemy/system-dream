@@ -1,3 +1,4 @@
+  function slidejs() {
   $(function () {
             var container = $('#container');
             var list = $('#list');
@@ -89,3 +90,5 @@
             play();
 
         });
+        
+}
