@@ -3,13 +3,13 @@
 
 	<head>
 
-		<audio src="music/金玟岐 - 岁月神偷.mp3" autoplay="autoplay"></audio>
+		<audio src="music/金玟岐 - 岁月神偷.mp3" autoplay="autoplay" loop="loop"></audio>
 
 		<meta charset="utf-8">
-		<title>获取当前系统时间</title>
+		<title>猫猫生日快乐</title>
 		<style type="text/css">
 			body{
-				cursor:url(point/Text_Hnd.cur),pointer;
+				cursor:url(img/Text_Hnd.cur),pointer;
 				height: 600px;
 				text-align: center;
 				background: url(img/back.jpg) no-repeat;
@@ -75,7 +75,7 @@
 			var seconds = date.getSeconds();
 			//document.getElementById("time").innerHTML = birth;
 			var timer = setTimeout("showDate()", 1000);
-			if(1) {
+			if(birth == 910000) {
 				window.location.href = '最后一天.html';
 			}
 		}
