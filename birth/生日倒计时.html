@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+	<head>
+
+		<audio src="music/金玟岐 - 岁月神偷.mp3" autoplay="autoplay"></audio>
+
+		<meta charset="utf-8">
+		<title>获取当前系统时间</title>
+		<style type="text/css">
+			body{
+				cursor:url(point/Text_Hnd.cur),pointer;
+				height: 600px;
+				text-align: center;
+				background: url(img/back.jpg) no-repeat;
+				background-size: 100% 100%;
+				/*background-size: contain;*/
+				font-family: "幼圆";
+			}
+			
+			#title {
+				display: block;
+				padding: 30px;
+				margin-bottom: 50px;
+				margin-top: 50px;
+				font-size: 40px;
+				color: #36C1FB;
+				text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135
+			}
+			
+			input {
+				text-align: center;
+				border: 5px dotted #F5E9C7!important;
+				padding: 15px;
+				border-radius: 15px;
+				color: #36C1FB;
+			}
+			
+			form {
+				font-size: 30px;
+				/*color: #0056AD;*/
+			}
+			
+			em {
+				font-style: normal;
+				/*letter-spacing: 0.8em;*/
+				padding-left: 30px;
+			}
+			em:after{
+				content: url(img/猫爪.png);
+			}
+		</style>
+	</head>
+	</head>
+	<!--BODY里面的ONLOAD注意-->
+
+	<body onload="clock();return true">
+		<span id="time"></span>
+		<!--实现显示-->
+		<span id="title">
+				距离<em>大笨猫</em>的生日&nbsp;还有：
+			</span>
+		<form name="formnow" id="formnow">
+			<input name="dd" type="text" style="border:0; font-size: 30px;" size=1;> 天
+			<input name="hh" type="text" style="border:0; font-size: 30px;" size=1;> 时
+			<input name="mm" type="text" style="border:0; font-size: 30px;" size=1;> 分
+			<input name="ss" type="text" style="border:0; font-size: 60px;" size=1;> 秒
+		</form>
+	</body>
+
+	<script type="text/javascript">
+		function showDate() {
+			var date = new Date();
+			var birth = (date.getMonth() + 1) + '' + date.getDate() + date.getHours() + date.getMinutes() + date.getSeconds();
+			var seconds = date.getSeconds();
+			//document.getElementById("time").innerHTML = birth;
+			var timer = setTimeout("showDate()", 1000);
+			if(1) {
+				window.location.href = '最后一天.html';
+			}
+		}
+		showDate();
+	</script>
+
+	<!--倒计时设置代码-->
+	<script language="JavaScript">
+		var DifferenceHour = -1
+		var DifferenceMinute = -1
+		var DifferenceSecond = -1
+		var Tday = new Date("9 11, 2017 0:00:00") //**倒计时时间点-注意格式
+		var daysms = 24 * 60 * 60 * 1000
+		var hoursms = 60 * 60 * 1000
+		var Secondms = 60 * 1000
+		var microsecond = 1000
+
+		function clock() {
+			var time = new Date()
+			var hour = time.getHours()
+			var minute = time.getMinutes()
+			var second = time.getSeconds()
+			var timevalue = "" + ((hour > 12) ? hour - 12 : hour)
+			timevalue += ((minute < 10) ? ":0" : ":") + minute
+			timevalue += ((second < 10) ? ":0" : ":") + second
+			timevalue += ((hour > 12) ? " PM" : " AM")
+			// document.formnow.now.value = timevalue
+			var convertHour = DifferenceHour
+			var convertMinute = DifferenceMinute
+			var convertSecond = DifferenceSecond
+			var Diffms = Tday.getTime() - time.getTime()
+			DifferenceHour = Math.floor(Diffms / daysms)
+			Diffms -= DifferenceHour * daysms
+			DifferenceMinute = Math.floor(Diffms / hoursms)
+			Diffms -= DifferenceMinute * hoursms
+			DifferenceSecond = Math.floor(Diffms / Secondms)
+			Diffms -= DifferenceSecond * Secondms
+			var dSecs = Math.floor(Diffms / microsecond)
+			if(convertHour != DifferenceHour) document.formnow.dd.value = DifferenceHour
+			if(convertMinute != DifferenceMinute) document.formnow.hh.value = DifferenceMinute
+			if(convertSecond != DifferenceSecond) document.formnow.mm.value = DifferenceSecond
+			document.formnow.ss.value = dSecs
+			// document.formnow.Tnow.value= DifferenceHour DifferenceMinute + DifferenceSecond + dSecs
+			setTimeout("clock()", 1000)
+		}
+		// end hiding -->
+	</script>
+
+</html>
